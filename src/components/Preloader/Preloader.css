@@ -1,0 +1,41 @@
+@keyframes spinner {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.preloader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  background-color: #f5f6f7;
+  width: 100%;
+}
+
+.preloader__rotary {
+	display: block;
+  width: 74px;
+  height: 74px;
+  border: 1px solid #444;
+	border-bottom-color: #888;
+	border-radius: 50%;
+	margin: auto;
+	animation: spinner .75s infinite linear;
+}
+
+.preloader__text {
+  margin-top: 24px;
+  margin-bottom: 0;
+  width: 280px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #b6bcbf;
+  text-align: center;
+}
+

@@ -1,0 +1,20 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.page__searchForm {
+  margin-top: -80px;
+}
+
+@media screen and (max-width: 767px) {
+  .page__search-form {
+    margin-top: 0;
+  }
+
+  .page__searchForm {
+    margin-top: 0;
+  }
+}

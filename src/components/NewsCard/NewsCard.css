@@ -1,0 +1,251 @@
+.newsCard {
+  display: flex;
+  position: relative;
+}
+.newsCard__link {
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: #fff;
+  font-size: 0;
+}
+.newsCard__image {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+}
+
+.newsCard__save {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  background-image: url(../../images/saveButton.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.newsCard__save:hover {
+  cursor: pointer;
+  background-image: url('../../images/saveButtonHover.svg');
+}
+
+.newsCard__save_nologged:hover::before {
+  content: 'Войдите, чтобы сохранять статьи';
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 182px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 45px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #000;
+}
+
+.newsCard__save_saved {
+  background-image: url('../../images/saveButtonSaved.svg');
+}
+
+.newsCard__container {
+  padding: 20px 24px 24px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 304px;
+}
+.newsCard__date {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #b6bcbf;
+}
+.newsCard__textbox {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.newsCard__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+  color: #1a1b22;
+}
+.newsCard__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #1a1b22;
+}
+.newsCard__source {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-family: 'Roboto Slab', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #b6bcbf;
+}
+
+.newsCard__delete {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  background-image: url('../../images/deleteButton.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.newsCard__delete:hover {
+  cursor: pointer;
+  background-image: url('../../images/deleteButtonHover.svg');
+}
+
+.newsCard__delete:hover::before {
+  content: 'Убрать из сохранённых';
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 159px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 45px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #000;
+  z-index: 1;
+}
+
+.newsCard__keyword {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background-color: #fff;
+  margin: 0;
+  min-width: 72px;
+  height: 40px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1279px) {
+  .newsCard__container {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .newsCard__container {
+    height: 270px;
+  }
+
+  .newsCard__title {
+    margin-bottom: 10px;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+  }
+
+  .newsCard__save {
+    top: 8px;
+    right: 8px;
+  }
+
+  .newsCard__delete {
+    top: 8px;
+    right: 8px;
+  }
+
+  .newsCard__keyword {
+    top: 8px;
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .newsCard__container {
+    height: 250px;
+  }
+
+  .newsCard__date {
+    margin-bottom: 10px;
+  }
+
+  .newsCard__textbox {
+    -webkit-line-clamp: 6;
+  }
+
+  .newsCard__title {
+    line-height: 1.625rem;
+  }
+
+  .newsCard__save {
+    top: 16px;
+    right: 16px;
+  }
+
+  .newsCard__delete {
+    top: 16px;
+    right: 16px;
+  }
+
+  .newsCard__keyword {
+    top: 16px;
+    left: 16px;
+  }
+}
