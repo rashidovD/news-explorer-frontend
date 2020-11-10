@@ -6,15 +6,24 @@ import Preloader from '../Preloader/Preloader';
 import NewsCardList from '../NewsCardList/NewsCardList';
 import About from '../About/About';
 
-function Main({activePage, searchResults, logged}) {
+function Main(props) {
   return (
     <>
-      <SearchForm />
-      <Preloader />
+      <SearchForm
+        searchQuery={props.searchQuery}
+        searchQueryError={props.searchQueryError}
+        onChange={props.handleSearchChange}
+        onSearch={props.onSearch}
+      />
+      {props.loading && <Preloader />}
       <NewsCardList
-        logged={logged}
-        searchResults={searchResults}
-        activePage={activePage}
+        logged={props.logged}
+        searchResultsShow={props.searchResultsShow}
+        searchResultsHidden={props.searchResultsHidden}
+        handleShowMore={props.handleShowMore}
+        onSaveBtnClick={props.onSaveBtnClick}
+        searchQueryFail={props.searchQueryFail}
+        activePage={props.activePage}
       />
       <About />
     </>

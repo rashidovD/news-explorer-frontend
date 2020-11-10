@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
-import logout from '../../images/logout.svg'
-import logoutBlack from '../../images/logoutBlack.svg'
+import logout from '../../images/logout.svg';
+import logoutBlack from '../../images/logoutBlack.svg';
+import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 
 function Navigation({activePage, setMainActive, setSavedNewsActive, logged, burgerOpened, openPopupLogin, handleLogout}) {
+
+  const currentUser = React.useContext(CurrentUserContext);
+
   return (
     <nav className={activePage === 'main' ?
     burgerOpened ? 'nav nav_opened' : 'nav' : burgerOpened ? 'nav nav_opened nav_whiteStrip' : 'nav'}>
@@ -35,7 +39,7 @@ function Navigation({activePage, setMainActive, setSavedNewsActive, logged, burg
             type='button'
             onClick={handleLogout}
           >
-            Грета
+            {currentUser.name}
             <img
               className='nav__logoutIcon'
               src={activePage === 'main' ? logout : logoutBlack}

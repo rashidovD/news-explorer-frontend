@@ -1,0 +1,31 @@
+.popup__link_signIn {
+  align-self: center;
+  border: 1px solid black;
+  padding: 2px 50px;
+}
+.popup__container {
+  flex-basis: 430px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 43px 79px 51px 36px;
+  box-sizing: border-box;
+  position: relative;
+}
+.popup__message {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 14px;
+  max-width: 315px;
+  text-align: center;
+}
+

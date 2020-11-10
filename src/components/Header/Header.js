@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import Navigation from '../Navigation/Navigation';
 
-function Header({burgerOpened, toggleBurger, activePage, setMainActive, setSavedNewsActive, handleLogout, logged, openPopupLogin}) {
+function Header({burgerOpened, toggleBurger, activePage, setMainActive, setSavedNewsActive, handleLogout, logged, openPopupLogin, currentUser}) {
+
   return (
     <header className={activePage === 'main' ?
       burgerOpened ? 'header header_darkStrip' : 'header' : 'header header_whiteStrip'}>
@@ -31,6 +32,7 @@ function Header({burgerOpened, toggleBurger, activePage, setMainActive, setSaved
         burgerOpened={burgerOpened}
         openPopupLogin={openPopupLogin}
         handleLogout={handleLogout}
+        currentUser={currentUser}
       />
     </header>
   )
