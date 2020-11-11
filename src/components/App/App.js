@@ -144,7 +144,7 @@ function App() {
       openPopupLogin();
     } else {
       closeSuccessPopup();
-      popupLoginOpen();
+      openPopupLogin();
     }
   }
 
