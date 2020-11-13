@@ -29,7 +29,7 @@ function LoginPopup(props) {
         value={props.values.email || ''}
         onChange={props.handleChange}
         required
-        pattern="[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]+"
+        pattern="[a-zA-Z-1-9.]+@[a-zA-Z]+\.[a-zA-Z]+"
       />
       <span
         className={props.errors.email ? 'popup__input-error popup__input-error_visible' : 'popup__input-error'}

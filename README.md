@@ -1,5 +1,7 @@
 # [PROJECT LINK](https://rashidovD.github.io/news-explorer-frontend/)
 
+  "homepage": "https://rashidovD.github.io/news-explorer-frontend"
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
