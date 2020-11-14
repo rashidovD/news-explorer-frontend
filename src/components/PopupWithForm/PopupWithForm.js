@@ -2,15 +2,18 @@ import React from 'react';
 
 import './PopupWithForm.css';
 
-function PopupWithForm({isOpen, name, title, submitBtnText, textLink, changePopup, onClose, children}) {
+function PopupWithForm({isOpen, name, title, submitBtnText, textLink, changePopup, onClose, children, isValid, onSubmit}) {
   return (
     <div className={
       isOpen ? `popup popup_type_${name} popup_opened` : `popup popup_type_${name}`
     }>
-      <form className="popup__form" name={name}>
+      <form className="popup__form" name={name} noValidate onSubmit={onSubmit}>
         <h2 className="popup__title">{title}</h2>
         {children}
-        <button className="popup__savebtn" type="submit">
+        <button
+          className={isValid ? 'popup__savebtn' : 'popup__savebtn popup__savebtn_disabled'}
+          type="submit"
+        >
           {submitBtnText}
         </button>
         <p className="popup__linkText">или <span className="popup__link" onClick={changePopup}>{textLink}</span></p>

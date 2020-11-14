@@ -67,6 +67,14 @@
   cursor: pointer;
 }
 
+.popup__savebtn_disabled {
+  background-color:#e6e8eb;;
+  color: #b6bcbf;
+  pointer-events: none;
+  box-shadow: none;
+  cursor: default;
+}
+
 .popup__linkText {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;

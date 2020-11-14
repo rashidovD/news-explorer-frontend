@@ -74,6 +74,16 @@
   color: #B6BCBF;
 }
 
+.searchForm__input-error {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  color: rgb(238, 238, 238);
+  z-index: 0;
+}
+
 .searchForm__button {
   width: 168px;
     height: 64px;

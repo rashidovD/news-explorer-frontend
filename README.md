@@ -1,4 +1,7 @@
-# [PROJECT LINK](https://rashidovD.github.io/news-explorer-frontend/)
+
+[Ссылка на работу](https://rashidov.students.nomoreparties.co/)
+
+"homepage": "https://rashidovD.github.io/news-explorer-frontend"
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

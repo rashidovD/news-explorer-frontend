@@ -57,6 +57,23 @@
 .newsCardList__noCards {
   margin-top: 86px;
 }
+
+.newsCardList__error {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #f5f6f7;
+  width: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #1a1b22;
+}
+
 .newsCardList__noTitle {
   margin-top: 40px;
   margin-bottom: 16px;
