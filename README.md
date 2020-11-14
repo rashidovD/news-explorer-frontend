@@ -29,7 +29,7 @@ ___
 
 |Удаленно|
 |:-------------|
-| **1. GH-pages демо версия не со всей Функциональностю** |
+| **1. GH-pages демо версия не со всей функциональностью** |
 | [rashidovD.github.io/news-explorer-frontend](https://rashidovD.github.io/news-explorer-frontend/) |
 | **2. Домен** |
 | [rashidov.students.nomoreparties.co](https://rashidov.students.nomoreparties.co/) |
