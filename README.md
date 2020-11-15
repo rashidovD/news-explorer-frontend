@@ -40,3 +40,5 @@ ___
 |:------------- |:------------- |
 | Главная страница  | http://localhost:3000/ |
 | Сохраненные статьи| http://localhost:3000/saved-news |
+___
+Переход на **backend** сайта по ссылке: [github.com/rashidovD/news-explorer-api](https://github.com/rashidovD/news-explorer-api)
